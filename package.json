@@ -1,13 +1,13 @@
 {
-  "name": "@metinseylan/nestjs-opentelemetry",
-  "version": "3.0.0",
+  "name": "@jirufik/nestjs-opentelemetry",
+  "version": "1.0.0",
   "description": "deeply integrated OpenTelemetry module for Nestjs",
   "author": "metinsyln@gmail.com",
   "license": "MIT",
   "main": "dist/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MetinSeylan/Nestjs-OpenTelemetry.git"
+    "url": "git+https://github.com/jirufik/Nestjs-OpenTelemetry.git"
   },
   "keywords": [
     "nestjs",
@@ -22,9 +22,9 @@
     "opencensus"
   ],
   "bugs": {
-    "url": "https://github.com/MetinSeylan/Nestjs-OpenTelemetry/issues"
+    "url": "https://github.com/jirufik/Nestjs-OpenTelemetry/issues"
   },
-  "homepage": "https://github.com/MetinSeylan/Nestjs-OpenTelemetry#readme",
+  "homepage": "https://github.com/jirufik/Nestjs-OpenTelemetry#readme",
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "nest build",
