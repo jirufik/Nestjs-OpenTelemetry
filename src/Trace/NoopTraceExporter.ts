@@ -1,7 +1,11 @@
-import { SpanExporter } from '@opentelemetry/sdk-trace-base';
+import { ReadableSpan, SpanExporter } from '@opentelemetry/sdk-trace-base';
+import { ExportResult } from '@opentelemetry/core';
 
 export class NoopTraceExporter implements SpanExporter {
-  export() {
+  export(
+    spans: ReadableSpan[],
+    resultCallback: (result: ExportResult) => void,
+  ): void {
     // noop
   }
 

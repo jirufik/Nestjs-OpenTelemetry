@@ -29,7 +29,7 @@ describe('Tracing Pipe Injector Test', () => {
     });
     it(`should trace global pipe`, async function () {
         class HelloPipe {
-            async transform() { }
+            async transform(value) { }
         }
         const context = await testing_1.Test.createTestingModule({
             imports: [sdkModule],
@@ -50,7 +50,7 @@ describe('Tracing Pipe Injector Test', () => {
     });
     it(`should trace controller pipe`, async function () {
         class HelloPipe {
-            async transform() { }
+            async transform(value, metadata) { }
         }
         let HelloController = class HelloController {
             async hi() { }

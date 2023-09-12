@@ -6,7 +6,7 @@ import { NodeSDK } from '@opentelemetry/sdk-node';
 export class OpenTelemetryService implements BeforeApplicationShutdown {
   constructor(@Inject(Constants.SDK) private readonly sdk: NodeSDK) {}
 
-  async beforeApplicationShutdown() {
+  async beforeApplicationShutdown(signal?: string) {
     await this.sdk?.shutdown();
   }
 }

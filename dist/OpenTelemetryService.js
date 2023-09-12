@@ -21,7 +21,7 @@ let OpenTelemetryService = class OpenTelemetryService {
     constructor(sdk) {
         this.sdk = sdk;
     }
-    async beforeApplicationShutdown() {
+    async beforeApplicationShutdown(signal) {
         await this.sdk?.shutdown();
     }
 };
