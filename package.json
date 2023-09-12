@@ -1,6 +1,6 @@
 {
   "name": "jrf-nestjs-opentelemetry",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "deeply integrated OpenTelemetry module for Nestjs",
   "author": "jirufik@gmail.com",
   "license": "MIT",
