@@ -9,7 +9,7 @@
 <a href="https://github.com/MetinSeylan/Nestjs-OpenTelemetry"><img src="https://img.shields.io/github/stars/MetinSeylan/nestjs-opentelemetry.svg"/></a>
 </p>
 
-It is just `@metinseylan/nestjs-opentelemetry`, but npm packages updated.
+It is just `jrf/nestjs-opentelemetry`, but npm packages updated.
 
 This library provides deeply integrated protocol-agnostic Nestjs [OpenTelemetry](https://opentelemetry.io/) instrumentations, metrics and SDK.
 
@@ -43,13 +43,13 @@ Competability table for Nestjs versions.
 
 ### Installation 
 ``` bash
-npm install @jirufik/nestjs-opentelemetry --save
+npm install jrf/nestjs-opentelemetry --save
 ```
 ***
 ### Configuration
 This is a basic configuration without any trace and metric exporter, but includes default metrics and injectors
 ```ts
-import { OpenTelemetryModule } from '@jirufik/nestjs-opentelemetry';
+import { OpenTelemetryModule } from 'jrf/nestjs-opentelemetry';
 
 @Module({
   imports: [
@@ -63,7 +63,7 @@ export class AppModule {}
 
 Async configuration example
 ```ts
-import { OpenTelemetryModule } from '@jirufik/nestjs-opentelemetry';
+import { OpenTelemetryModule } from 'jrf/nestjs-opentelemetry';
 import {ConfigModule, ConfigService} from '@nestjs/config';
 
 @Module({
@@ -94,7 +94,7 @@ export class AppModule {}
 ### Distributed Tracing
 Simple setup with Zipkin exporter, including with default trace instrumentations.
 ```ts
-import { OpenTelemetryModule } from '@jirufik/nestjs-opentelemetry';
+import { OpenTelemetryModule } from 'jrf/nestjs-opentelemetry';
 import { ZipkinExporter } from '@opentelemetry/exporter-zipkin';
 import { SimpleSpanProcessor } from '@opentelemetry/sdk-trace-base';
 

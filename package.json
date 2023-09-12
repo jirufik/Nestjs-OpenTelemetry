@@ -1,8 +1,8 @@
 {
-  "name": "@jirufik/nestjs-opentelemetry",
+  "name": "jrf/nestjs-opentelemetry",
   "version": "1.0.0",
   "description": "deeply integrated OpenTelemetry module for Nestjs",
-  "author": "metinsyln@gmail.com",
+  "author": "jirufik@gmail.com",
   "license": "MIT",
   "main": "dist/index.js",
   "repository": {
